@@ -1,3 +1,11 @@
+## This is a fork of got that reduces npm package size
+
+This fork removes cacheable-request, introduced in https://github.com/sindresorhus/got/pull/284 bringing the npm package from 0.75MB to 0.45MB.
+
+Run `yarn autoclean --init && yarn autoclean --force` to bring it down even more to 0.25MB
+
+The use case is Lambda@Edge or other environments where code size is important
+
 <h1 align="center">
 	<br>
 	<img width="360" src="https://rawgit.com/sindresorhus/got/master/media/logo.svg" alt="got">

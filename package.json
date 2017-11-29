@@ -1,6 +1,6 @@
 {
-	"name": "got",
-	"version": "8.0.0",
+	"name": "got-lite",
+	"version": "8.0.1",
 	"description": "Simplified HTTP requests",
 	"license": "MIT",
 	"repository": "sindresorhus/got",
@@ -29,7 +29,8 @@
 		"coveralls": "nyc report --reporter=text-lcov | coveralls"
 	},
 	"files": [
-		"index.js"
+		"index.js",
+		"cacheable-request-stub.js"
 	],
 	"keywords": [
 		"http",
@@ -51,7 +52,6 @@
 	],
 	"dependencies": {
 		"@sindresorhus/is": "^0.6.0",
-		"cacheable-request": "^2.1.1",
 		"decompress-response": "^3.3.0",
 		"duplexer3": "^0.1.4",
 		"get-stream": "^3.0.0",
